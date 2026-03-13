@@ -309,6 +309,19 @@ Each finding below is documented with sources in the corresponding analysis file
 - [Anomaly Report](output/reports/anomaly_report.md)
 - [Consolidated Findings](output/reports/consolidated_findings.md)
 
+## Methodology and Tools
+
+This investigation was conducted by a human researcher who directed all research decisions, selected sources, evaluated findings, and wrote the public-facing posts. Claude Code (Anthropic's CLI tool, running Claude Opus) was used as a research assistant for:
+
+- Bulk data processing: parsing 4,433 IRS Schedule I grant records, 59,736 DAF recipients, 132MB of Colorado TRACER campaign finance data, and IRS Business Master File extracts covering all US tax-exempt organizations
+- Cross-referencing findings across 24 analysis files and identifying patterns that span multiple research threads
+- Drafting intermediate working documents and structured data summaries
+- Web searches against public databases (OpenSecrets, ProPublica, state lobbying portals, WHOIS/DNS, Wayback Machine)
+
+Claude Code did not independently choose what to investigate, decide what constitutes a finding, or determine what to publish. Every factual claim in this repository cites a primary source (IRS filing, Senate disclosure, state database, legislative record, or published reporting) that can be independently verified. The tool does not change whether Meta's LD-2 filing lists H.R. 3149, whether DCA has an EIN, or whether Stefanski admitted tech funding under oath. The records exist or they don't.
+
+If you want to verify any finding, the source URLs and database identifiers are provided throughout. Start with the primary records, not with this repository.
+
 ## License
 
 This is an OSINT research product. All findings are based on public records. Source data is cited throughout.
